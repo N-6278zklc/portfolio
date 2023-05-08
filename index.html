@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Yomogi&display=swap" rel="stylesheet">
+  <script src="js/script.js" defer></script>
+</head>
+<body>
+  
+  <header id="header">
+    <div class="header-wrapper">
+      
+    <nav>
+      <button id="menu-open" class="btn-menu">
+        <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+          <title>メニューを開く</title>
+          <path clip-rule="evenodd" d="m4.25 8c0-.41421.33579-.75.75-.75h14c.4142 0 .75.33579.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.33579-.75-.75zm0 4c0-.4142.33579-.75.75-.75h14c.4142 0 .75.3358.75.75s-.3358.75-.75.75h-14c-.41421 0-.75-.3358-.75-.75zm.75 3.25c-.41421 0-.75.3358-.75.75s.33579.75.75.75h14c.4142 0 .75-.3358.75-.75s-.3358-.75-.75-.75z" fill-rule="evenodd"/>
+      </svg>
+      </button>
+      <div id="menu-panel">
+        <button id="menu-close" class="btn-menu">
+          <svg height="24" viewBox="0 0 24 24" width="24" xmlns="http://www.w3.org/2000/svg">
+            <title>メニューを閉じる</title>
+            <path clip-rule="evenodd" d="m7.53033 6.46967c-.29289-.29289-.76777-.29289-1.06066 0s-.29289.76777 0 1.06066l4.46963 4.46967-4.46963 4.4697c-.29289.2929-.29289.7677 0 1.0606s.76777.2929 1.06066 0l4.46967-4.4696 4.4697 4.4696c.2929.2929.7677.2929 1.0606 0s.2929-.7677 0-1.0606l-4.4696-4.4697 4.4696-4.46967c.2929-.29289.2929-.76777 0-1.06066s-.7677-.29289-1.0606 0l-4.4697 4.46963z" fill-rule="evenodd"/>
+        </svg>
+        </button>
+        <ul class="menu-list">
+          <li><a href="#">profile</a></li>
+          <li><a href="#">スキルセット</a></li>
+          <li><a href="#">作品情報</a></li>
+          <li><a href="#">contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    </div>
+  </header>
+  <div id="loading">
+    <p class="spinner">loading...</p>
+  </div>
+  <div class="contents">
+    <div class="scroll-snap">
+      <section id="top">
+        <div id="top-title" class="intro">
+          <h1 class="top-name">向日葵エヌ</h1>
+          <p>HPなどのサイト制作はお任せください</p>
+        </div>
+        
+      </section>
+      <section id="profile">
+        <div class="name">
+          <div id="top-title">
+            <h1 class="fadein">profile</h1>
+          </div>
+          <div class="prof-width">
+      
+            <p class="fadein">名前：向日葵エヌ<br>
+              コロナ禍に自身の進路やキャリアを考え直した際に当時ブームとなっていたWeb制作への挑戦を開始しました。<br>
+              挫折と再帰を繰り返してYoutubeシナリオライターとしても活動しながら日々HTML・CSSやJavascriptのお勉強を楽しんでいます。<br>
+              実は動画制作にも興味があるのでPCを買い換えたら挑戦したいです。<br>
+              HP制作のご相談はフォームにてご連絡をお願いいたします。</p>
+          </div>
+        </div>
+      </section>
+      <section id="skill-set">
+        <div id="top-title">
+          <h1 class="fadein">スキルセット</h1>
+        </div>
+        <div class="skill-content">
+          <div class="skill-title fadein">
+            <p>HTML/CSS</p>
+          </div>
+          <div class="skill-explanation fadein">
+            <p>CSSアニメーションやSNSロゴ挿入、Youtube動画の挿入など対応可能です。</p>
+          </div>
+          
+           
+        
+        </div>
+        <div class="skill-content flex-reverse">
+          <div class="skill-title fadein">
+            <p>JavaScript</p>
+          </div>
+          <div class="skill-explanation fadein">
+            <p>サンプルサンプルサンプル</p>
+          </div>
+        </div>
+      </section>
+      <section id="gallery" >
+        <div id="top-title">
+          <h1 class="fadein">作品集</h1>
+          <p class="fadein">今まで制作した作品を掲載しております。</p>
+        </div>
+        <div id="grid">
+          <div class="grid-item">
+            <div class="grid-img">
+
+            </div>
+            <div class="grid-text text-margin fadein">
+
+            </div>
+          </div>
+        </div>
+        
+    
+      </section>
+    </div>
+    <section id="req">
+      <div id="top-title">
+        <h1 class="fadein">ご依頼の流れ</h1>
+      </div>
+      
+      <ol class="time-line">
+        <li class="line-box">
+          <div class="pink-1">
+            <p>
+              ①
+            </p>
+          </div>
+          <h3 class="timeline-title">お問い合わせ</h3>  
+          
+          <p class="timeline-content">ご用件を下記のメッセージフォームにてお聞かせくださいませ</p>
+        </li>
+        <li class="line-box">
+          <div class="pink-1">
+            <p>
+              ②
+            </p>
+          </div>
+          <h3 class="timeline-title">要件ヒアリング</h3>
+          <p class="timeline-content">イメージ像などをお伺いいたします。</p>
+        </li>
+        <li class="line-box">
+          <div class="pink-1">
+            ③
+          </div>
+          <h3 class="timeline-title">お見積り</h3>
+          <p class="timeline-content">ご予算とすり合わせて参ります。</p>
+        </li>
+        <li class="line-box">
+          <div class="pink-1">
+            ④
+          </div>
+          <h3 class="timeline-title">受注</h3>
+          <p class="timeline-content">制作開始します。</p>
+        </li>
+        <li class="line-box">
+          <div class="pink-1">
+            ⑤
+          </div>
+          <h3 class="timeline-title">制作</h3>
+          <p class="timeline-content">制作を開始いたします。</p>
+        </li>
+        <li class="line-box">
+          <div class="pink-1">
+            ⑥
+          </div>
+          <h3 class="timeline-title">納品</h3>
+          <p class="timeline-content">納品方法はご相談くださいません。</p>
+        </li>
+      </ol>
+    </section>
+    <section id="contact">
+      <div id="top-title" class= "fadein">
+        <h1>contact</h1>
+        <p>お問い合わせはこちら</p>
+      </div>
+      <form action="#">
+        <div>
+          <label for="">名前：</label>
+          <input type="text" id="name" name="your-name">
+        </div>
+        <div>
+          <label for="">メールアドレス：</label>
+          <input type="email" id="email" name="your-email">
+        </div>
+        <div>
+          <label for="">メッセージ</label>
+          <textarea name="" id="" cols="30" rows="10"></textarea>
+          <p>100文字以内で入力してください</p>
+          <p>現在：<span>0</span>文字</p>
+        </div>
+  
+        <input type="submit" class="form-btn" value="送信">
+      </form>
+    </section>
+  </div>
+</body>
+</html>

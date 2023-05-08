@@ -1,0 +1,548 @@
+
+:root {
+  --gray: #D9D9D9;
+  --pink: #E0B6A9;
+  --green: #D3E9D0;
+  --brown: #403632;
+  /*h1見出しに使用*/
+  --bigText: 'Yomogi', cursive;
+  --paragraph: 'Kiwi Maru', serif;
+
+}
+
+/*
+共通
+*/
+.contents {
+  width: 1200px;
+  height: 100vh;
+  margin: 0 auto;
+  /*overflow: auto;
+  scroll-snap-type: y mandatory;*/
+}
+
+h1 {
+  font-family: var(--bigText);
+  font-size: 2.5rem;
+}
+
+p {
+  font-family: var(--paragraph);
+  line-height: 2.5;
+  font-size: 1.5rem;
+}
+
+/*
+読み込み
+*/
+#loading {
+  transition: all 1s;
+  background: var(--pink);
+  position: fixed;
+  z-index: 9999;
+  inset: 0;
+  display: grid;
+  place-items: center;
+}
+
+.spinner {
+ height: 100px;
+ width: 100px;
+}
+
+.loaded {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*
+header
+*/
+
+#header {
+  height: 70px;
+  width: 100%;
+  font-family: var(--paragraph);
+}
+
+.header-wrapper {
+  width: 1100px;
+  height: 50px;
+  display: flex;
+  justify-content: space-between;
+  margin: 20px auto ;
+  
+}
+
+.btn-menu {
+  position: fixed;
+  right: 1rem;
+  top: 1rem;
+  z-index: 4;
+  padding: .5rem 1rem;
+  border: 1px solid var(--pink);
+  border-radius: 50%;
+  height: 4rem;
+  width: 4rem;
+  transition: .4s;
+}
+
+.btn-menu svg {
+  fill: var(--pink);
+
+}
+
+#menu-close {
+  border: 1px solid var(--green);
+}
+
+#menu-close svg {
+  fill: var(--green);
+}
+
+/*スライドメニューパネル*/
+#menu-panel {
+  position: fixed;
+  top: 0;
+  right: 0;
+  z-index: 4;
+  padding: 8rem 2rem 2rem;
+  width: max(32vw, 20rem);
+  height: 100vh;
+  background: var(--pink);
+  box-shadow: 0 0 2rem var(--brown);
+  translate: 100vw;
+}
+
+.menu-list {
+  list-style: none;
+  width: 200px;
+  margin: 0 auto;
+}
+
+.menu-list li {
+  margin: 1.5rem 0;
+  text-align: center;
+  opacity: 0;
+  color: var(--brown);
+}
+
+.menu-list a {
+  text-decoration: none;
+  font-size: 20px;
+  
+}
+
+.fadein {
+  opacity: 0;
+}
+
+/*
+top
+=========================================*/
+#top {
+  width: 100%;
+  height: 100vh;
+
+  
+
+}
+
+#top-title {
+  width: 1000px;
+  
+  margin: 200px auto;
+  text-align: center;
+  
+}
+
+#top #top-title {
+  scroll-snap-align: center;
+}
+
+#top-title .top-name {
+  font-size: 5rem;
+  margin-bottom: 15px;
+}
+
+/*
+profile 
+================================*/
+#profile {
+  
+  scroll-snap-align: start;
+  height: 100%;
+}
+
+
+
+/* skill-set */
+
+#skill-set {
+  width: 100%;
+  height: 900px;
+  scroll-snap-align: center;
+}
+
+.skill-content {
+ width: 1000px; 
+ 
+  display: flex;
+  justify-content: space-between;
+  margin: 15rem auto;
+  align-items: center;
+}
+
+.skill-title {
+  width: 170px;
+  background: var(--gray);
+  padding: 30px 20px 40px 20px;
+} 
+
+.flex-reverse {
+  flex-direction: row-reverse;
+}
+
+.skill-explanation {
+  width: 650px;
+}
+
+/*
+gallery
+*/
+img {
+  height: 600px;
+}
+
+#gallery {
+  width: 100%;
+  height: 100%;
+}
+
+#grid {
+  
+  height: 800px;
+  display: grid;
+  margin: 0 auto;
+}
+
+.grid-item {
+  
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.grid-text {
+  width: 100%;
+}
+
+.text-margin {
+  margin-left: 80px;
+}
+
+/*画像のアニメーション*/
+
+.fadeIn {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+/*
+ご依頼の流れ
+===================================*/
+#req {
+  width: 1100px;
+  height: 100rem;
+  scroll-snap-align: center;
+  
+}
+
+.time-line {
+  width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+}
+
+.line-box {
+  display: flex;
+  width: 1000px;
+  height: 200px;
+  align-items: center;
+  
+}
+
+
+.timeline-content {
+  width: 76%;
+  border-left: 5px solid #E0B6A9;
+  text-align: left;
+  padding: 1.5rem 0 1.5rem 2.5rem;
+  line-height: 8;
+}
+
+.timeline-title {
+  width: 24%;
+  text-align: right;
+  padding: 2rem 2.5rem 2rem 0;
+  z-index: 1;
+  font-size: 1.5rem;
+}
+
+.pink-1 {
+  height: 100px;
+  width: 100px;
+  background: #E0B6A9;
+  position: absolute;
+  border-radius: 50%;
+  
+  right: 1450px;
+  
+}
+
+.pink-2 {
+  height: 100px;
+  width: 100px;
+  background: #E0B6A9;
+  position: absolute;
+  border-radius: 50%;
+  left: 340px;
+}
+
+/*
+contact
+*/
+
+#contact {
+  width: 1200px;
+  height: 100%;
+
+}
+
+form div {
+  
+  margin-bottom: 50px;
+}
+
+label {
+  font-size: 1.125rem;
+  margin-bottom: 10px;
+  display: block;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  
+  background: var(--green);
+  border: 1px var(--gray) solid;
+  border-radius: 5px;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+input[type="text"],
+input[type="email"] {
+  width: 100%;
+  max-width: 300px;
+
+}
+
+textarea {
+  width: 400px;
+  
+  height: 10rem;
+}
+
+input[type="submit"] {
+  border: none;
+  cursor: pointer;
+  line-height: 1;
+}
+
+
+/*
+mobileサイズ
+*/
+
+@media(max-width: 600px) {
+  .contents {
+    width: 100%;
+    height: 100%;
+  }
+
+  
+
+  #header {
+    width: 400px;
+
+  }
+
+  #loading {
+    width: 100%;
+    transition: all 1s;
+    background: var(--pink);
+    position: fixed;
+    z-index: 9999;
+    inset: 0;
+    display: grid;
+    place-items: center;
+  }
+  
+  .spinner {
+   height: 100px;
+   width: 100px;
+  }
+
+  #top {
+    width: 100%;
+    height: 100vh;
+  
+    
+  
+  }
+
+  #top-title {
+    width: 250px;
+    height: 100%;
+    margin: 150px auto;
+    text-align: center;
+    
+  }
+
+  #top-title .top-name {
+    width: 100%;
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 15px;
+  }
+
+  #profile {
+    width: 100%;
+    height: 100%;
+  }
+
+ .prof-width {
+  width: 350px;
+  margin: 0 auto;
+ }
+
+  p {
+    font-size: 1rem;
+  }
+
+  #skill-set {
+    width: 100%;
+    height: 100%;
+  }
+
+  .skill-content {
+    width: 400px;
+    display: inline-block;
+    flex-direction: column;
+    text-align: center;
+    margin: 10rem auto;
+  }
+
+  .skill-title {
+    width: 300px;
+    margin: 2.5rem auto;
+    text-align: center;
+  }
+
+  .skill-explanation {
+    width: 300px;
+
+    margin: 0 auto;
+  }
+
+  /*
+  work
+  */
+
+  img {
+    height: 350px;
+  }
+
+  #grid {
+    width: 400px;
+    height: 400px;
+  }
+
+  .grid-item {
+    display: inline-block;
+    flex-direction: column;
+  }
+
+  .grid-text {
+    margin: 0 auto;
+    width: 300px;
+    line-height: 2;
+  }
+
+  .text-margin {
+    margin: 0 auto;
+  }
+
+  #req {
+    width: 100%;
+    height: 100%;
+    
+  }
+
+  .line-box {
+    width: 100%;
+    display: inline-block;
+  }
+
+  .time-line {
+    width: 100%;
+    height: 100%;
+   
+  }
+
+  
+  .timeline-title {
+    width: 300px;
+    height: 50px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 5px 10px 0 10px;
+    font-family: var(--paragraph);
+  }
+
+  .timeline-title li h3 {
+    
+    list-style: decimal;
+    list-style-type: decimal;
+  }
+
+  .timeline-content {
+    width: 300px;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border: none;
+    line-height: 1;
+    padding: 12px;
+  }
+
+  #contact {
+    width: 400px;
+  }
+
+  textarea {
+    width: 380px;
+  }
+  
+}
