@@ -138,3 +138,24 @@ const showimgObserve = new IntersectionObserver(showimg);
 
 //grid-itemを監視するように指示
 showimgObserve.observe(document.querySelector('.grid-item'));
+
+//textareaのテキストボックスを定数textに代入
+const text = document.querySelector('#text');
+
+//現在：0文字の『0』の<span>に設定した#countを定数countに代入
+const count = document.querySelector('#count');
+
+//定数『text』にイベントを付与
+text.addEventListener('keyup', () => {
+  //現在：0文字の『0』の<span>に設定した#countに文字数カウントを付与
+  count.textContent = text.value.length;
+
+  //もし、textの文字数(中身が)100越えたら～
+  if(text.value.length > 100) {
+    //数字の文字色をCSSに設定した『.alert』を付与
+    count.classList.add('alert');
+  } else {
+    //文字数100以下なら『.alert』を排除
+    count.classList.remove('alert');
+  }
+});
