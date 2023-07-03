@@ -3,13 +3,15 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>ポートフォリオ</title>
   <link rel="stylesheet" href="https://unpkg.com/destyle.css@1.0.5/destyle.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Kiwi+Maru:wght@300&family=Yomogi&display=swap" rel="stylesheet">
-  <script src="js/script.js" defer></script>
+<script src="https://kit.fontawesome.com/29d209d44f.js" crossorigin="anonymous"></script>  <script src="js/script.js" defer></script>
+  
+
 </head>
 <body>
   
@@ -31,22 +33,30 @@
         </svg>
         </button>
         <ul class="menu-list">
-          <li><a href="#">profile</a></li>
-          <li><a href="#">スキルセット</a></li>
-          <li><a href="#">作品情報</a></li>
-          <li><a href="#">contact</a></li>
+          <li><a href="#profile">profile</a></li>
+          <li><a href="#skill-set">スキルセット</a></li>
+          <li><a href="#gallery">作品情報</a></li>
+          <li><a href="#contact">contact</a></li>
         </ul>
       </div>
     </nav>
     </div>
   </header>
   <div id="loading">
-    <p class="spinner">loading...</p>
+      <div id="pink-screen">
+        <p class="spinner">loading...</p>
+      </div>
+      <div id="green-screen">
+
+      </div>
+
   </div>
+
+  
   <div class="contents">
     <div class="scroll-snap">
       <section id="top">
-        <div id="top-title" class="intro">
+        <div id="top-title" class="intro roundShow">
           <h1 class="top-name">向日葵エヌ</h1>
           <p>HPなどのサイト制作はお任せください</p>
         </div>
@@ -62,7 +72,6 @@
             <p class="fadein">名前：向日葵エヌ<br>
               コロナ禍に自身の進路やキャリアを考え直した際に当時ブームとなっていたWeb制作への挑戦を開始しました。<br>
               挫折と再帰を繰り返してYoutubeシナリオライターとしても活動しながら日々HTML・CSSやJavascriptのお勉強を楽しんでいます。<br>
-              実は動画制作にも興味があるのでPCを買い換えたら挑戦したいです。<br>
               HP制作のご相談はフォームにてご連絡をお願いいたします。</p>
           </div>
         </div>
@@ -71,25 +80,42 @@
         <div id="top-title">
           <h1 class="fadein">スキルセット</h1>
         </div>
-        <div class="skill-content">
-          <div class="skill-title fadein">
-            <p>HTML/CSS</p>
-          </div>
-          <div class="skill-explanation fadein">
-            <p>CSSアニメーションやSNSロゴ挿入、Youtube動画の挿入など対応可能です。</p>
-          </div>
+        <div class="skill-block">
+          <div class="skill-box">
+            <div class="skill-content box-line">
+              <div class="skill-title fadein">
+              
+                <div class="skill-icon">
+                  <i class="fa-solid fa-code"></i>
+                </div>
+                <p>HTML/CSSコーディング</p>
+              </div>
+              <div class="skill-explanation fadein">
+                <p>Webサイト制作を担当します。<br>CSSアニメーションやSNSロゴ挿入、Youtube動画の挿入など対応可能です。</p>
+              </div>
+            </div>
+            
+             
           
-           
+          </div>
+          <div class="skill-box">
+            <div class="skill-block">
+              <div class="skill-content flex-reverse">
+              <div class="skill-title fadein">
+                
+                <div class="skill-icon js-icon">
+                  <svg xmlns="http://www.w3.org/2000/svg" height="1em" viewBox="0 0 448 512"><!--! Font Awesome Free 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"/></svg>
+                </div>
+                <p>JavaScript</p>
+              </div>
+              <div class="skill-explanation fadein">
+                <p>JavaScriptにて<br>アニメーションの対応可能です。</p>
+              </div>
+            </div>
+            </div>
+          </div>
+        </div>
         
-        </div>
-        <div class="skill-content flex-reverse">
-          <div class="skill-title fadein">
-            <p>JavaScript</p>
-          </div>
-          <div class="skill-explanation fadein">
-            <p>サンプルサンプルサンプル</p>
-          </div>
-        </div>
       </section>
       <section id="gallery" >
         <div id="top-title">
@@ -97,7 +123,7 @@
           <p class="fadein">今まで制作した作品を掲載しております。</p>
         </div>
         <div id="grid">
-          <div class="grid-item">
+          <div class="grid-item  fadein">
             <div class="grid-img">
 
             </div>
@@ -118,7 +144,8 @@
       <ol class="time-line">
         <li class="line-box">
           <div class="pink-1">
-            
+           
+           
           </div>
           <h3 class="timeline-title">お問い合わせ</h3>  
           
@@ -164,20 +191,20 @@
     <section id="contact">
       <div id="top-title" class= "fadein">
         <h1>contact</h1>
-        <p>お問い合わせはこちら</p>
+        <p>お問い合わせはこちら<br>※googleフォームを使用しております。</p>
       </div>
-      <form action="#">
+      <form action="https://docs.google.com/forms/d/e/1FAIpQLSeWIvZiCi5HLLfe-Wboxdx9RCqtUFDb83xpNcHDf0oBMaN-Ug/viewform?usp=sf_link">
         <div>
           <label for="">名前：</label>
-          <input type="text" id="name" name="your-name">
+          <input type="text" id="name" name="entry.929337602">
         </div>
         <div>
           <label for="">メールアドレス：</label>
-          <input type="email" id="email" name="your-email">
+          <input type="email" id="email" name="entry.1583208974">
         </div>
         <div>
           <label for="">メッセージ</label>
-          <textarea name="" id="text" cols="30" rows="10"></textarea>
+          <textarea name="entry.1381548432" id="text" cols="30" rows="10"></textarea>
           <p>100文字以内で入力してください</p>
           <p>現在：<span id="count">0</span>文字</p>
         </div>
