@@ -1,10 +1,20 @@
 
 //ローディング画面
-const loading = document.querySelector('#loading');
+const loadingAreaPink = document.querySelector('#loading');
 window.addEventListener('load', () => {
-  //読み込みが終わったらCSSに記載している.loadedの中に書かれている値を使用
-  loading.classList.add('loaded');//ローディング画面を消す
+  //ローディング中(ピンクのスクリーン)
+  loadingAreaPink.animate({
+    //動きの内容
+    opacity: [1, 0],
+    visibility: 'hidden',
+  }, {
+    duration: 2000,
+    delay: 1200,
+    easing: 'ease',
+    fill: 'forwards',
+  })
 });
+
 
 
 
@@ -56,10 +66,11 @@ menuClose.addEventListener('click', () => {
 const heading = document.querySelector('#top');
 const keyframes = {
   opacity: [0, 1],
-  translate: ['0 50px', 0],
+  //          横　縦
+  translate: ['0 200px', 0],
 };
 const options = {
-  duration: 2000,
+  duration: 4000,
   easing: 'ease',
 };
 
@@ -159,3 +170,21 @@ text.addEventListener('keyup', () => {
     count.classList.remove('alert');
   }
 });
+
+const roundShow = document.querySelector('.roundShow');
+
+roundShow.animate(
+  {
+    borderRadius: [
+      '20% 50% 50% 70%/50% 50% 70% 50%',
+      '50% 20% 50% 50%/40% 40% 60% 60%',
+      '50% 40% 20% 40%/40% 50% 50% 80%',
+      '50% 50% 50% 20%/60% 40% 70% 20%'
+    ]
+  },
+  {
+    duration: 8000,
+    direction: 'alternate',
+    iterations: Infinity,
+  }
+);
