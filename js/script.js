@@ -122,17 +122,35 @@ const lists = [
   
 ];
 
+const menu2 = document.querySelector('.grid-img2');
+const gridText2 = document.querySelector('.grid-text2');
+const lists2 = [
+  {
+    name: 'カフェのホームページを作りました。',
+    img: 'cafe.png',
+
+    lan: 'HTML/CSS & Javascript',
+    material: 'イラストACより',
+    reference: 'https://n-6278zklc.github.io/Sample.cafe/',
+  }
+]
+
+//console.log(lists2[0].name);
+
 //console.log(lists[0].name);
 
 for (let i = 0; i < lists.length; i++) {
-  const content = `<div><img src="images/${lists[i].img}" alt="">`;
-  
+  const content = `<div><img src="images/${lists[i].img}" alt=""></div>`;
+  const content2 = `<div><img src="images/${lists2[i].img}" alt=""></div>`;
 
   menu.insertAdjacentHTML('beforebegin', content);
+  menu2.insertAdjacentHTML('beforebegin', content2);
 
   const grid = `<h2>${lists[i].name}</h2><p>使用言語:${lists[i].lan}</p><p>画像素材：${lists[i].material}</p>`;
   gridText.insertAdjacentHTML('beforeend', grid); 
 
+  const grid2 = `<h2>${lists2[i].name}</h2><p>使用言語:${lists2[i].lan}</p><p>画像素材：${lists2[i].material}</p><p><a href="${lists2[i].reference}">サイトはこちらをクリック</a><p>`;
+  gridText2.insertAdjacentHTML('beforeend',grid2);
 }
 
 const showimg = (entries, obs) => {
