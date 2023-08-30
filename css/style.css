@@ -314,7 +314,7 @@ img {
 
 #grid {
   
-  height: 800px;
+  height: 1000px;
   display: grid;
   margin: 0 auto;
 }
@@ -327,7 +327,19 @@ img {
   justify-content: space-between;
 }
 
+.grid-item2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+}
+
 .grid-text {
+  width: 100%;
+  font-family: var(--paragraph);
+}
+
+.grid-text2 {
   width: 100%;
   font-family: var(--paragraph);
 }
@@ -624,7 +636,7 @@ mobileサイズ
 
   #grid {
     width: 400px;
-    height: 400px;
+    height: 900px;
   }
 
   .grid-item {
@@ -632,7 +644,18 @@ mobileサイズ
     flex-direction: column;
   }
 
+  .grid-item2 {
+    display: inline-block;
+    flex-direction: column;
+  }
+
   .grid-text {
+    margin: 0 auto;
+    width: 300px;
+    line-height: 2;
+  }
+
+  .grid-text2 {
     margin: 0 auto;
     width: 300px;
     line-height: 2;
